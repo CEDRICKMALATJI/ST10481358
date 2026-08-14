@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Menu - Metswako's Delicious Corner</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>Metswako's Delicious Corner</h1>
+
+        <p>Fresh • Delicious • Affordable</p>
+
+
+        <!-- NAVIGATION -->
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="products.html">Menu</a>
+
+            <a href="enquiry.html">Enquiry</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+
+        <section class="menu-introduction">
+
+            <h2>Our Delicious Menu</h2>
+
+            <p>
+                Enjoy a selection of freshly prepared meals
+                made with quality ingredients and served at
+                affordable prices.
+            </p>
+
+        </section>
+
+
+
+        <!-- MAIN MEALS -->
+
+        <section>
+
+            <h2 class="menu-heading">
+                🍽️ Main Meals
+            </h2>
+
+
+            <div class="products-card">
+
+
+                <!-- BUNNY CHOW -->
+
+                <article class="product-card">
+
+                    <img
+                        src="images/MOUNT.jpeg"
+                        alt="Delicious Bunny Chow"
+                    >
+
+                    <div class="product-content">
+
+                        <h3>Bunny Chow</h3>
+
+                        <p>
+                            A delicious South African favourite
+                            filled with tasty curry and served
+                            with fresh bread.
+                        </p>
+
+                        <p class="price">
+                            R60.00
+                        </p>
+<button onclick="addToCart('Bunny Chow', 60)">
+        Add to Cart
+    </button>
+</div>
+                        <a
+                            href=""
+                            class="product-button"
+                        >
+                            Enquire Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- BEEF BURGER -->
+
+                <article class="product-card">
+
+                    <img
+                        src="images/beef-burger.jpeg"
+                        alt="Beef Burger"
+                    >
+
+                    <div class="product-content">
+
+                        <h3>Beef Burger</h3>
+
+                        <p>
+                            A juicy beef burger prepared with
+                            fresh ingredients and served with
+                            crispy chips.
+                        </p>
+
+                        <p class="price">
+                            R50.00
+                        </p>
+<button onclick="addToCart('Beef-Burger', 60)">
+        Add to Cart
+    </button>
+</div>
+                        <a
+                            href=".html"
+                            class="product-button"
+                        >
+                            Enquire Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CHICKEN AND CHIPS -->
+
+                <article class="product-card">
+
+                    <img
+                        src="images/chicken-chips.jpeg"
+                        alt="Chicken and Chips"
+                    >
+
+                    <div class="product-content">
+
+                        <h3>Chicken & Chips</h3>
+
+                        <p>
+                            Crispy chicken served with golden
+                            chips and a delicious sauce.
+                        </p>
+
+                        <p class="price">
+                            R55.00
+                        </p>
+<button onclick="addToCart('chicken-chips', 60)">
+        Add to Cart
+    </button>
+</div>
+                        <a
+                            href=".html"
+                            class="product-button"
+                        >
+                            Enquire Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- OTHER MENU ITEMS -->
+
+        <section class="other-menu">
+
+            <h2 class="menu-heading">
+                🍟 Other Favourites
+            </h2>
+
+
+            <div class="simple-menu">
+
+
+                <div>
+
+                    <h3>Chicken Wings</h3>
+
+                    <p>
+                        Crispy and flavourful chicken wings.
+                    </p>
+
+                    <strong>R45.00</strong>
+
+                </div>
+
+
+                <div>
+
+                    <h3>Chips</h3>
+
+                    <p>
+                        Golden and crispy chips.
+                    </p>
+
+                    <strong>R25.00</strong>
+
+                </div>
+
+
+                <div>
+
+                    <h3>Soft Drink</h3>
+
+                    <p>
+                        Choose from a selection of
+                        refreshing soft drinks.
+                    </p>
+
+                    <strong>R15.00</strong>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CALL TO ACTION -->
+
+        <section class="menu-cta">
+
+            <h2>Hungry?</h2>
+
+            <p>
+                Have a question about our menu or want
+                to make an enquiry?
+            </p>
+
+            <a
+                href="---.html"
+                class="button"
+            >
+                Make an Enquiry
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Metswako's Delicious Corner
+        </p>
+
+        <p>
+            Fresh food. Great taste. Affordable prices.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
+<div class="cart">
+    <h2>🛒 Your Cart</h2>
+
+    <ul id="cart-items"></ul>
+
+    <h3>Total: R<span id="cart-total">0</span></h3>
+
+    <button onclick="checkout()">Place Order</button>
+</div>
