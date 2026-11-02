@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Menu | Metswako's Delicious Corner</title>
+
+    <meta name="description"
+        content="Explore the delicious and affordable menu at Metswako's Delicious Corner. Enjoy Bunny Chow, Beef Burgers, Chicken and Chips, and more.">
+
+    <meta name="keywords"
+        content="Metswako's Delicious Corner, Bunny Chow, Beef Burger, Chicken and Chips, affordable meals, food menu">
+
+    <meta name="author" content="Metswako's Delicious Corner">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+    <style>
+        .menu-search {
+            max-width: 750px;
+            margin: 25px auto;
+            padding: 20px;
+            text-align: center;
+            background: #fff4e8;
+            border-radius: 10px;
+        }
+
+        .menu-search input,
+        .menu-search select {
+            width: 100%;
+            max-width: 320px;
+            padding: 12px;
+            margin: 8px;
+            border: 1px solid #b87333;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .menu-search label {
+            font-weight: bold;
+        }
+
+        .no-results {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+
+        .menu-search-item[hidden] {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Metswako's Delicious Corner</h1>
+        <p>Fresh • Delicious • Affordable</p>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Menu</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="menu-introduction">
+            <h2>Our Delicious Menu</h2>
+            <p>
+                Enjoy a selection of freshly prepared meals
+                made with quality ingredients and served at
+                affordable prices.
+            </p>
+        </section>
+
+        <!-- SEARCH AND FILTER -->
+        <section class="menu-search">
+
+            <h2>Find Your Favourite Meal</h2>
+
+            <label for="menuSearch">Search menu:</label>
+            <br>
+
+            <input
+                type="search"
+                id="menuSearch"
+                placeholder="Search for a meal..."
+                autocomplete="off"
+            >
+
+            <br>
+
+            <label for="categoryFilter">Filter by category:</label>
+            <br>
+
+            <select id="categoryFilter">
+                <option value="all">All Menu Items</option>
+                <option value="main">Main Meals</option>
+                <option value="other">Other Favourites</option>
+            </select>
+
+            <p id="searchCount" aria-live="polite">
+                Showing all 6 menu items.
+            </p>
+
+        </section>
+
+        <!-- MAIN MEALS -->
+        <section class="main-meals" id="mainMealsSection">
+
+            <h2 class="menu-heading">🍽️ Main Meals</h2>
+
+            <div class="products-card">
+
+                <article class="product-card menu-search-item"
+                    data-category="main">
+
+                    <img
+                        src="images/MOUNT.jpeg"
+                        alt="Freshly prepared South African Bunny Chow"
+                        width="300"
+                        height="220"
+                        class="food-image"
+                        onclick="openLightbox(this.src)"
+                    >
+
+                    <div class="product-content">
+                        <h3>Bunny Chow</h3>
+
+                        <p>
+                            A delicious South African favourite
+                            filled with tasty curry and served
+                            with fresh bread.
+                        </p>
+
+                        <p class="price">R60.00</p>
+
+                        <button type="button"
+                            onclick="addToCart('Bunny Chow', 60)">
+                            Add to Cart
+                        </button>
+
+                        <a href="enquiry.html" class="product-button">
+                            Enquire Now
+                        </a>
+                    </div>
+                </article>
+
+                <article class="product-card menu-search-item"
+                    data-category="main">
+
+                    <img
+                        src="images/beef-burger.jpeg"
+                        alt="Juicy beef burger served with crispy chips"
+                        width="300"
+                        height="220"
+                        class="food-image"
+                        onclick="openLightbox(this.src)"
+                    >
+
+                    <div class="product-content">
+                        <h3>Beef Burger</h3>
+
+                        <p>
+                            A juicy beef burger prepared with
+                            fresh ingredients and served with
+                            crispy chips.
+                        </p>
+
+                        <p class="price">R50.00</p>
+
+                        <button type="button"
+                            onclick="addToCart('Beef Burger', 50)">
+                            Add to Cart
+                        </button>
+
+                        <a href="enquiry.html" class="product-button">
+                            Enquire Now
+                        </a>
+                    </div>
+                </article>
+
+                <article class="product-card menu-search-item"
+                    data-category="main">
+
+                    <img
+                        src="images/chicken-chips.jpeg"
+                        alt="Crispy chicken served with golden chips"
+                        width="300"
+                        height="220"
+                        class="food-image"
+                        onclick="openLightbox(this.src)"
+                    >
+
+                    <div class="product-content">
+                        <h3>Chicken &amp; Chips</h3>
+
+                        <p>
+                            Crispy chicken served with golden
+                            chips and a delicious sauce.
+                        </p>
+
+                        <p class="price">R55.00</p>
+
+                        <button type="button"
+                            onclick="addToCart('Chicken & Chips', 55)">
+                            Add to Cart
+                        </button>
+
+                        <a href="enquiry.html" class="product-button">
+                            Enquire Now
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- OTHER MENU ITEMS -->
+        <section class="other-menu" id="otherMenuSection">
+
+            <h2 class="menu-heading">🍟 Other Favourites</h2>
+
+            <div class="simple-menu">
+
+                <div class="menu-search-item" data-category="other">
+                    <h3>Chicken Wings</h3>
+                    <p>Crispy and flavourful chicken wings.</p>
+                    <strong>R45.00</strong>
+                </div>
+
+                <div class="menu-search-item" data-category="other">
+                    <h3>Chips</h3>
+                    <p>Golden and crispy chips.</p>
+                    <strong>R25.00</strong>
+                </div>
+
+                <div class="menu-search-item" data-category="other">
+                    <h3>Soft Drink</h3>
+                    <p>
+                        Choose from a selection of
+                        refreshing soft drinks.
+                    </p>
+                    <strong>R15.00</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <p id="noResults" class="no-results">
+            Sorry, no menu items match your search.
+            Please try another search.
+        </p>
+
+        <!-- SHOPPING CART -->
+        <section class="cart-section">
+
+            <div class="cart">
+                <h2>🛒 Your Cart</h2>
+
+                <ul id="cart-items"></ul>
+
+                <h3>
+                    Total: R<span id="cart-total">0.00</span>
+                </h3>
+
+                <button type="button" onclick="checkout()">
+                    Place Order
+                </button>
+            </div>
+
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="menu-cta">
+            <h2>Hungry?</h2>
+
+            <p>
+                Have a question about our menu or want
+                to make an enquiry?
+            </p>
+
+            <a href="enquiry.html" class="button">
+                Make an Enquiry
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Metswako's Delicious Corner.
+            All rights reserved.
+        </p>
+
+        <p>Fresh food. Great taste. Affordable prices.</p>
+    </footer>
+
+    <!-- IMAGE LIGHTBOX -->
+    <div id="lightbox" class="lightbox"
+        onclick="closeLightbox()">
+
+        <span class="close"
+            onclick="closeLightbox()"
+            aria-label="Close enlarged image">&times;</span>
+
+        <img id="lightbox-image"
+            src=""
+            alt="Enlarged food image"
+            onclick="event.stopPropagation()">
+
+    </div>
+
+    <!-- SEARCH AND FILTER FUNCTIONALITY -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const searchInput = document.getElementById("menuSearch");
+            const categoryFilter = document.getElementById("categoryFilter");
+            const menuItems = document.querySelectorAll(".menu-search-item");
+            const noResults = document.getElementById("noResults");
+            const searchCount = document.getElementById("searchCount");
+            const mainSection = document.getElementById("mainMealsSection");
+            const otherSection = document.getElementById("otherMenuSection");
+
+            function filterMenu() {
+
+                const searchText = searchInput.value.toLowerCase().trim();
+                const selectedCategory = categoryFilter.value;
+
+                let visibleCount = 0;
+
+                menuItems.forEach(function(item) {
+
+                    const itemText = item.textContent.toLowerCase();
+                    const itemCategory = item.dataset.category;
+
+                    const matchesSearch = itemText.includes(searchText);
+
+                    const matchesCategory =
+                        selectedCategory === "all" ||
+                        selectedCategory === itemCategory;
+
+                    const shouldShow = matchesSearch && matchesCategory;
+
+                    item.hidden = !shouldShow;
+
+                    if (shouldShow) {
+                        visibleCount++;
+                    }
+
+                });
+
+                const mainVisible = Array.from(menuItems).some(function(item) {
+                    return item.dataset.category === "main" && !item.hidden;
+                });
+
+                const otherVisible = Array.from(menuItems).some(function(item) {
+                    return item.dataset.category === "other" && !item.hidden;
+                });
+
+                mainSection.hidden = !mainVisible;
+                otherSection.hidden = !otherVisible;
+
+                noResults.style.display =
+                    visibleCount === 0 ? "block" : "none";
+
+                searchCount.textContent =
+                    "Showing " + visibleCount + " of 6 menu items.";
+            }
+
+            searchInput.addEventListener("input", filterMenu);
+            categoryFilter.addEventListener("change", filterMenu);
+
+        });
+    </script>
+
+</body>
+</html>

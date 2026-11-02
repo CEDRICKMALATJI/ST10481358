@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic page information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO information -->
+    <title>Metswako's Delicious Corner | Fresh and Affordable Meals</title>
+
+    <meta name="description"
+        content="Welcome to Metswako's Delicious Corner. Discover delicious, freshly prepared and affordable meals with friendly customer service.">
+
+    <meta name="keywords"
+        content="Metswako's Delicious Corner, affordable food, fresh meals, Bunny Chow, Beef Burger, Chicken and Chips">
+
+    <meta name="author" content="Metswako's Delicious Corner">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link to JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- WEBSITE HEADER -->
+    <header>
+
+        <h1>Metswako's Delicious Corner</h1>
+
+        <!-- Navigation menu -->
+        <nav aria-label="Main navigation">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="enquiry.html">Enquiry</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN WEBSITE CONTENT -->
+    <main>
+
+        <!-- WELCOME SECTION -->
+        <section class="hero">
+
+            <img
+                src="images/WELCOME.jpeg"
+                alt="Welcome to Metswako's Delicious Corner"
+                class="hero-image food-image"
+                width="300"
+                height="300"
+                onclick="openLightbox(this.src)"
+            >
+
+            <h2>Welcome to Metswako's Delicious Corner</h2>
+
+            <p>
+                Delicious, affordable and freshly prepared meals
+                made with care for our customers.
+            </p>
+
+            <a href="products.html" class="button">
+                View Our Menu
+            </a>
+
+        </section>
+
+
+        <!-- WHY CHOOSE US SECTION -->
+        <section class="features-section">
+
+            <h2>Why Choose Us?</h2>
+
+            <div class="features">
+
+                <div class="feature">
+
+                    <h3>Fresh Food</h3>
+
+                    <p>
+                        We provide freshly prepared meals for
+                        our customers.
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <h3>Affordable Prices</h3>
+
+                    <p>
+                        Enjoy delicious meals at affordable prices.
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <h3>Friendly Service</h3>
+
+                    <p>
+                        We aim to provide every customer with
+                        friendly service.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- WEBSITE FOOTER -->
+    <footer>
+
+        <p>
+            &copy; 2026 Metswako's Delicious Corner.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- IMAGE LIGHTBOX -->
+    <div
+        id="lightbox"
+        class="lightbox"
+        onclick="closeLightbox()"
+    >
+
+        <span
+            class="close"
+            onclick="closeLightbox()"
+            aria-label="Close enlarged image"
+        >&times;</span>
+
+        <img
+            id="lightbox-image"
+            src=""
+            alt="Enlarged food image"
+            onclick="event.stopPropagation()"
+        >
+
+    </div>
+
+</body>
+
+</html>
