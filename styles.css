@@ -1,0 +1,609 @@
+
+/* =========================================
+   METSWAKO'S DELICIOUS CORNER
+   COMPLETE WEBSITE STYLESHEET
+========================================= */
+
+
+/* =========================================
+   1. GENERAL STYLING
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2,
+h3 {
+    color: #5a2d1a;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   2. HEADER
+========================================= */
+
+header {
+    background: linear-gradient(135deg, #5a2d1a, #8b4513);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 5px solid #f4c542;
+}
+
+header h1 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   3. NAVIGATION
+========================================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+    background-color: #3d2418;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #d97706;
+    color: white;
+}
+
+
+/* =========================================
+   4. HOMEPAGE HERO SECTION
+========================================= */
+
+.hero {
+    text-align: center;
+    background-color: #f5e6d3;
+    padding: 50px 20px;
+    border-radius: 12px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 15px auto;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+}
+
+
+/* =========================================
+   5. BUTTONS
+========================================= */
+
+.button,
+.product-button {
+    display: inline-block;
+    background-color: #d97706;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
+    margin-top: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover,
+.product-button:hover {
+    background-color: #b45309;
+    color: white;
+}
+
+button {
+    background-color: #d97706;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b45309;
+}
+
+
+/* =========================================
+   6. WHY CHOOSE US / FEATURES
+========================================= */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.features div {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.features h3 {
+    color: #8b4513;
+}
+
+
+/* =========================================
+   7. MENU INTRODUCTION
+========================================= */
+
+.menu-introduction {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 35px;
+}
+
+.menu-introduction h2 {
+    font-size: 36px;
+}
+
+.menu-heading {
+    text-align: center;
+    color: #5a2d1a;
+    margin: 35px 0 25px;
+}
+
+
+/* =========================================
+   8. PRODUCT GRID AND PRODUCT CARDS
+========================================= */
+
+.products-card,
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.16);
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.product-content {
+    padding: 20px;
+}
+
+.product-content h3 {
+    color: #5a2d1a;
+    font-size: 22px;
+}
+
+.product-content p {
+    color: #555;
+}
+
+.price {
+    color: #d97706 !important;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   9. OTHER MENU ITEMS
+========================================= */
+
+.other-menu {
+    margin-top: 45px;
+}
+
+.simple-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.simple-menu div {
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.simple-menu h3 {
+    color: #5a2d1a;
+}
+
+.simple-menu strong {
+    color: #d97706;
+    font-size: 20px;
+}
+
+
+/* =========================================
+   10. SHOPPING CART
+========================================= */
+
+.cart-section {
+    margin-top: 40px;
+}
+
+.cart {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    max-width: 800px;
+    margin: auto;
+}
+
+.cart h2,
+.cart h3 {
+    text-align: center;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    background-color: #fff8f0;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #ead7c5;
+}
+
+#cart-total {
+    color: #d97706;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   11. MENU CALL TO ACTION
+========================================= */
+
+.menu-cta {
+    text-align: center;
+    margin: 50px 0 20px;
+    padding: 40px 20px;
+    background-color: #f5e6d3;
+    border-radius: 12px;
+}
+
+.menu-cta h2 {
+    font-size: 32px;
+}
+
+
+/* =========================================
+   12. FORMS
+========================================= */
+
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* =========================================
+   13. CONTACT PAGE
+========================================= */
+
+.contact-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.contact-info {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================
+   14. IMAGE HOVER EFFECT
+========================================= */
+
+.food-image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.food-image:hover {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   15. IMAGE LIGHTBOX
+========================================= */
+
+/* Dark overlay covering the entire screen */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.92);
+
+    /* Centre the enlarged image */
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Enlarged image */
+.lightbox img {
+    display: block;
+    max-width: 90%;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: auto;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+    z-index: 100000;
+}
+
+.close:hover {
+    color: #f4c542;
+}
+
+
+/* =========================================
+   16. FOOTER
+========================================= */
+
+footer {
+    background-color: #5a2d1a;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    color: white;
+    margin: 5px;
+}
+
+
+/* =========================================
+   17. MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 768px) {
+
+    main {
+        width: 94%;
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .products-card,
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .simple-menu {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 35px 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero-image {
+        height: 260px;
+    }
+
+    .menu-introduction h2 {
+        font-size: 29px;
+    }
+
+    .product-card img {
+        height: 230px;
+    }
+
+    .lightbox img {
+        max-width: 95%;
+        max-height: 75vh;
+    }
+
+    .close {
+        right: 18px;
+        top: 15px;
+    }
+}
+
+
+/* =========================================
+   18. SMALL MOBILE SCREENS
+========================================= */
+
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .product-content {
+        padding: 15px;
+    }
+
+    .cart {
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px 14px;
+    }
+}
